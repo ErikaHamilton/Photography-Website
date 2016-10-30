@@ -1,0 +1,66 @@
+
+/*Erika Hamilton*/
+html{font-style: none;
+    background-image: url(images/camera.jpg);
+    background-size: cover;
+    align: center;}
+
+nav  a { color: white;
+         font-size: 40px;
+         text-decoration: none;
+         font-family: 'Cormorant+Garamond';
+         color: white;
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         margin-right: -50%;
+         transform: translate(-50%, -50%);
+         opacity: .70;
+         letter-spacing: 1px;}
+a:hover {color: #FFBD4A}
+
+.enter a::before,
+.enter a::after {
+        display: inline-block;
+      	opacity: 0;
+        -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+        -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+      	transition: transform 0.3s, opacity 0.2s;}
+
+.enter a::before {margin-right: 10px;
+      	content: '[';
+        -webkit-transform: translateX(20px);
+        -moz-transform: translateX(20px);
+      	transform: translateX(20px);}
+
+.enter a::after {margin-left: 10px;
+      	content: ']';
+        -webkit-transform: translateX(-20px);
+        -moz-transform: translateX(-20px);
+      	transform: translateX(-20px);}
+.enter a:hover::before,
+.enter a:hover::after,
+.enter a:focus::before,
+.enter a:focus::after { opacity: 1;
+                        -webkit-transform: translateX(0px);
+                        -moz-transform: translateX(0px);
+  	                   transform: translateX(0px);}
+
+
+img { width: 25px;
+      height: 25px;
+      padding: 10px;
+      padding-top: 40px;
+      text-align: center;
+      opacity: 0.5;}
+
+img:hover {opacity: 1;}
+
+
+footer { text-align: baseline;}
+
+.NavSocial { display: flex;
+             margin-left: auto;
+             align-items: center;
+             justify-content: center;
+             position: bottom;}

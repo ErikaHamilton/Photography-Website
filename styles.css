@@ -1,0 +1,177 @@
+
+/*Erika Hamilton*/
+
+html{font-style: none;
+     background-color: #191818;
+     background-repeat: repeat;
+     font-family: 'Cormorant+Garamond';
+     margin: 0;}
+
+a { color: white;
+    text-decoration: none;
+    letter-spacing: 1px;}
+
+ul {list-style-type: none;
+    text-align: center;}
+
+body {margin-top: 0;
+      background: fixed;}
+
+
+h1 {width: 175px;
+    opacity: .7;
+    margin-left: 40%;
+    text-align: center;
+    color: #FFBD4A;
+    font-size: 20px;
+    clear: both;}
+
+p {padding-left: 5px;
+   padding-right: 5px;
+   text-align: center;}
+
+footer {color: #FFBD4A;
+        clear: both;}
+
+/*Unfortunately I didn't have enough time to create a successful lightbox effect when clicked*/
+#Lightbox {width: 1020px;
+           float: right;
+           text-transform: uppercase;
+           float: right;
+           margin-left: 20px;}
+
+#Lightbox ul {overflow: scroll;}
+
+#Lightbox ul li { float: right;
+                  padding: 5px;
+                  background: #727272;
+                  margin: 5px 10px 10px 5px;;
+                  list-style-type: none;
+                  position: relative;
+                  cursor: pointer;}
+
+
+#Lightbox ul li img {display: block;
+                     width: 250px;
+                     height: 175px;
+                     float: right;}
+#Lightbox ul {   -moz-column-count: 2;
+                 -moz-column-gap: 2px;
+                 -moz-column-rule-style: 1px;
+                 -webkit-column-count: 2;
+                 -webkit-column-gap: 2px;
+                 -webkit-column-rule-style: 1px;
+                 columns: 2;
+                 column-count: 2;
+                 column-gap: 2px;
+                 display: inline-block;
+                 max-width: 1000px;
+                 width: 782px;}
+
+#Lightbox .caption { width: 253px;
+                     height: 177px;
+                     background: rgba(0, 0, 0, 0.5);
+                     position: absolute;
+                     top: 0;
+                     left: 0;
+                     display: table;
+                     padding: 7.5px;
+                     opacity: 0;
+                     transition: all .5s;}
+
+#Lightbox .title {color: #fff;
+                  background: rgba(0, 0, 0, 0.5);
+                  text-transform: uppercase;
+                  font-size: 14px;
+                  text-align: center;
+                  display: table-cell;
+                  vertical-align: middle;
+                  transform: scale(0.2);
+                  transition: all 0.5s;}
+
+#Lightbox .title::before { float: right;
+                          font-size: 24px;
+                          color: #FFF;
+                          opacity: .5;
+                          display: block;
+                          line-height: 36px;}
+
+#Lightbox li:hover { box-shadow: inset 0 0 10px 1px rgba(0, 0, 0, 0.75);
+                     cursor: zoom-in;}
+
+#Lightbox li:hover .caption {opacity: 1;}
+
+#Lightbox li:hover .title {transform: scale(1);}
+
+#Lightbox li:hover img {border: 2px;
+                        border-color: #FFBD4A;
+                        border-style: solid;}
+
+#Gal {overflow: scroll;
+      padding top: 0;}
+
+#NavSocial img {opacity: .7;
+                width: 20px;
+                height: 20px;
+                padding-top: 25px;
+                padding-left: 5px;
+                margin: 5px;
+                text-align: center;}
+
+#NavSocial img:hover{opacity: 1;}
+
+.logo {width: 200px;
+       height: 200px;
+       padding-left: 25px;
+       padding-top: 70px;}
+
+
+#NavPane {background-color: #141313;
+          opacity: .74;
+          width: 20%;
+          height:100%;
+          position: fixed;
+          padding: 5px;}
+
+#contact    {width: 400px;
+            background-color: #727272;
+            float: right;
+            margin-top: 20%;
+            margin-right: 29%;
+            padding-left: 5px;
+            padding-right: 5px;
+            box-shadow: inset 0 0 10px 1px rgba(0, 0, 0, 0.75);}
+#contact h1 {margin-left: 27%;}
+
+
+
+.NavLinks ul {padding-top: 30px;;
+              padding-right: 30px;}
+a:hover {color: #FFBD4A;}
+.NavLinks a::before,
+.NavLinks a::after {display: inline-block;
+                 	  opacity: 0;
+                    -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+                    -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+                 	  transition: transform 0.3s, opacity 0.2s;}
+
+.NavLinks a::before {margin-right: 10px;
+                 	   content: '[';
+                     -webkit-transform: translateX(20px);
+                     -moz-transform: translateX(20px);
+                 	   transform: translateX(20px);}
+
+.NavLinks a::after {margin-left: 10px;
+                 	  content: ']';
+                    -webkit-transform: translateX(-20px);
+                    -moz-transform: translateX(-20px);
+                 	  transform: translateX(-20px);}
+.NavLinks a:hover::before,
+.NavLinks a:hover::after,
+.NavLinks a:focus::before,
+.NavLinks a:focus::after { opacity: 1;
+                          -webkit-transform: translateX(0px);
+                          -moz-transform: translateX(0px);
+             	            transform: translateX(0px);}
+.footer {padding-top: 160px;
+         padding-left: 50px;}
